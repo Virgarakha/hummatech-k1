@@ -69,7 +69,7 @@ function Album() {
           onChange={(e) => setFile(e.target.files[0])}
           className="mb-2"
         />
-        <button type="submit" className="bg-blue-600 text-white p-2 rounded">Upload Photo</button>
+        <button type="submit" className="bg-red-600 text-white p-2 rounded">Upload Photo</button>
       </form>
       <div className="grid grid-cols-3 gap-4">
         {photos.map((photo) => (
@@ -80,12 +80,12 @@ function Album() {
               className="w-full h-48 object-cover rounded"
             />
             <div className="mt-2 flex justify-between">
-              <button
+              {/* <button
                 onClick={() => handleFavorite(photo.id)}
                 className={`p-2 rounded ${photo.is_favorited ? 'bg-yellow-400' : 'bg-gray-200'}`}
               >
                 Favorite
-              </button>
+              </button> */}
               <button
                 onClick={() => handleTrash(photo.id)}
                 className="p-2 bg-red-500 text-white rounded"

@@ -45,7 +45,7 @@ function Dashboard() {
             className="p-2 border rounded mr-2"
             required
           />
-          <button type="submit" className="bg-blue-600 text-white p-2 rounded">Create Album</button>
+          <button type="submit" className="bg-red-600 text-white p-2 rounded">Create Album</button>
         </div>
       </form>
       <div className="grid grid-cols-3 gap-4">

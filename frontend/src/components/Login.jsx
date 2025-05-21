@@ -23,6 +23,10 @@ function Login() {
 
   return (
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow">
+        <div className="w-20 h-20 mx-auto rounded-full bg-red-600 flex items-center justify-center">
+          <span className="text-white text-2xl font-bold">P</span>
+        </div>
+          <p className='text-center mb-10'>photo web</p>
       <h2 className="text-2xl font-bold mb-4">Login</h2>
       {error && <p className="text-red-500 mb-4">{error}</p>}
       <form onSubmit={handleSubmit}>
@@ -46,7 +50,7 @@ function Login() {
             required
           />
         </div>
-        <button type="submit" className="w-full bg-blue-600 text-white p-2 rounded">Login</button>
+        <button type="submit" className="w-full bg-red-600 text-white p-2 rounded">Login</button>
       </form>
     </div>
   );
